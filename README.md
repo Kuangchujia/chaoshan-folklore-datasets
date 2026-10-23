@@ -14,13 +14,13 @@
 | # | Dataset | Coverage | Status · version | Zenodo concept DOI | Licence | Website | Source |
 |:--:|:---|:---|:---|:---|:---|:---|:---|
 | 1 | **Chaoshan Intangible Cultural Heritage List Dataset**<br>Shantou municipal register, batches 6–8 | **139** entries: batch 6 — 29 (doc 汕府〔2019〕6号), batch 7 — 58 (doc 汕府〔2022〕47号), batch 8 — 52 (doc 汕府〔2024〕63号)<br>10 categories; 22 fields<br>72 food entries, grouped by craft into 11 groups<br>33 entries already carry a corresponding page on the site | **Published**<br>v1.0 · 2026-10-23 | [10.5281/zenodo.23584608](https://doi.org/10.5281/zenodo.23584608) | CC BY 4.0 | — (none yet; see §III, item 1) | Three documents issued by the Shantou Municipal People's Government, transcribed item by item<br>OSF mirror [osf.io/n29q3](https://osf.io/n29q3/) |
-| 2 | **Yingge dossier**<br>The Chaoshan war-dance, as performed by named teams | To be fixed once the material has been checked item by item | **Preparing** | — | CC BY 4.0 (intended) | [Yingge section, 8 pages](https://chaoshanwiki.com/yingge/what/) | Pages of the site's Yingge section and field records |
+| 2 | **Chaoshan Yingge Dance Dataset**<br>The site's ten Yingge volumes, reduced to tables | **88** records in 8 tables: 3 registered projects (national list, item Ⅲ-8), 25 teams, 4 national-level inheritors, 9 entries on the three schools, 7 named roles, 17 terms, 15 questions, 8 sources<br>Seven of the ten volumes are tabulated; the other three stay as prose on the site | **Published**<br>v1.0 · 2026-10-23 | [10.5281/zenodo.23588409](https://doi.org/10.5281/zenodo.23588409)<br>data paper: [10.5281/zenodo.23588756](https://doi.org/10.5281/zenodo.23588756) | CC BY 4.0 | [Yingge, ten volumes](https://chaoshanwiki.com/yingge/) | The site's own ten volumes, each table row traced to a listed source |
 | 3 | **Chaoshan temple fairs and festival calendar** | To be fixed once the material has been checked item by item | **Planning** | — | CC BY 4.0 (intended) | [Festival calendar](https://chaoshanwiki.com/god-parade/) | Pages of the site's festival-calendar section |
 | 4 | **Chaoshan traditional crafts** | To be fixed once the material has been checked item by item | **Planning** | — | CC BY 4.0 (intended) | — | The register above already lists 98 items under "traditional crafts"; this dataset would go below the name to processes and transmission, and is not meant to repeat the register |
 
 **"Published" means one thing here: the Zenodo record is public.** It does not mean the register is complete, that it has been revised, or that a page for it exists on the website.
 
-Rows 2–4 are not datasets yet. Their coverage is written as "to be fixed" rather than guessed, because a scope declared before the material has been checked is a promise, not a description. They stay in this table so that work in progress has a fixed place to be declared instead of appearing without notice.
+Rows 3–4 are not datasets yet. Their coverage is written as "to be fixed" rather than guessed, because a scope declared before the material has been checked is a promise, not a description. They stay in this table so that work in progress has a fixed place to be declared instead of appearing without notice.
 
 ---
 
@@ -52,9 +52,9 @@ Two consequences worth stating, since both are the usual way this kind of index 
 
 **State of the loop, 2026-10-23**
 
-1. **Website page — missing for dataset 1.** The site's `/dataset/` page documents a different work: a manifest of the site's own pages. It is not a page about this register, so the row reads "—" rather than borrowing that link.
+1. **Website page — done for dataset 2, missing for dataset 1.** Dataset 2 is derived from the site's Yingge section, so that section is the page that explains it, and the row links there. Dataset 1 still has none: the site's `/dataset/` page documents a different work, a manifest of the site's own pages, so that row reads "—" rather than borrowing the link.
 2. **This index** — the table above.
-3. **Zenodo** — concept DOI `10.5281/zenodo.23584608`; the v1.0 release is record `23584609`; mirror on OSF at `osf.io/n29q3` (DOI `10.17605/OSF.IO/N29Q3`).
+3. **Zenodo** — dataset 1: concept DOI `10.5281/zenodo.23584608`, v1.0 release record `23584609`, OSF mirror `osf.io/n29q3` (DOI `10.17605/OSF.IO/N29Q3`). Dataset 2: concept DOI `10.5281/zenodo.23588409`, v1.0 release record `23588410`, no mirror.
 4. **Synchronisation rule** — a new release means: a new Zenodo version (the previous version DOI stays resolvable), a new version number and date in this table, and the website page updated in the same pass. The old row is not rewritten to look like the new one; what changed is recorded under §VIII.
 
 ---
@@ -79,6 +79,7 @@ This index therefore publishes **concept DOIs only**. When a dataset gains a new
 - **The food flag and its grouping are the author's.** 72 entries are marked as food and arranged into 11 groups by craft. The gazettes do not classify them this way.
 - **Three source documents, three different formats.** Batch 6 came as a PDF with a text layer, batch 7 as a compound `.doc`, batch 8 as an HTML table; merged cells were filled from the row above.
 - **English titles are working translations** and claim no exclusivity.
+- **The Yingge dataset states its own limits.** Its 25 teams are the ones the site could name and source, not every team in the region; its 4 inheritors are the national-level ones the register lists, not the total; one of the three schools, 甲子, lies outside the three Chaoshan municipalities; a team and an inheritor cannot be used to corroborate each other. The full list is in the dataset's own `README.md`.
 - Nothing in this series concerns fortunes, auspicious dates, or advice of any kind.
 
 ---
@@ -111,3 +112,4 @@ The author maintains a second, unrelated series on Chinese calendrics and histor
 | Date | Version | Notes |
 |:---|:---|:---|
 | 2026-10-23 | 1.0.0 | Repository created. Dataset 1 (Shantou register of intangible cultural heritage, batches 6–8, v1.0) indexed with its concept DOI `10.5281/zenodo.23584608` and its OSF mirror. Rows 2–4 entered as preparing or planning, with no DOI and no version. Stated as a rule that this repository holds no data files. |
+| 2026-10-23 | 1.1.0 | Dataset 2 added: the Chaoshan Yingge Dance Dataset (88 records in 8 tables), concept DOI `10.5281/zenodo.23588409`, version DOI `10.5281/zenodo.23588410`. Its row moves from preparing to published; the website column now points at the Yingge section of the site, which is what the dataset was derived from. §III item 1 rewritten accordingly and a bullet added under §V stating the Yingge dataset's own limits. No other row changed. The data paper DOI `10.5281/zenodo.23588756` was added to the same row alongside the concept DOI. |
